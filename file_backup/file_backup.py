@@ -7,7 +7,7 @@ from crontab import CronTab
 class fileBackerUpper(object):
     def __init__(self):
         mem_cron = CronTab(tab="""
-          * * * * * command
+          * * * * * python C:\Users\Tom\Desktop\file_backup\file_backup\file_backup.py
         """)
         mem_cron.write()
 
